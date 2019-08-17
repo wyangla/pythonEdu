@@ -29,7 +29,9 @@ def subFunc():
     ins = cls(-3)    # could be anything
     ins.__init__(3)
     ins.insMethod()
-    return cls(1).insMethod
+    
+    ins_2 = cls(1)
+    return ins_2.insMethod
 
 def parentFunc(inputFunc):
     sf = inputFunc()
