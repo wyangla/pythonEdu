@@ -16,11 +16,11 @@ class cls():
 def subFunc():
     return cls().insMethod
 
-def parentFun():
-    sf = subFunc()
+def parentFun(inputFun):
+    sf = inputFun()
     sf()
 
 
 
 if __name__ == "__main__":
-    parentFun()
+    parentFun(subFunc)
