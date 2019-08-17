@@ -9,7 +9,7 @@ basic ideas of:
 
 # OO object oriented
 
-class cls():
+class cls(object):
     
     clsProperty = -2
     
