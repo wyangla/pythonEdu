@@ -26,7 +26,8 @@ class cls():
 
 def subFunc():
     cls.clsMethod()
-    cls(3).insMethod()
+    ins = cls(3)
+    ins.insMethod()
     return cls(1).insMethod
 
 def parentFunc(inputFunc):
