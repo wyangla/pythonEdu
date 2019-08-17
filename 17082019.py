@@ -10,11 +10,11 @@ basic ideas of:
 # OO object oriented
 
 class cls():
-    def clsMethod(self):
+    def insMethod(self):
         print(1)
 
 def subFunc():
-    return cls().clsMethod
+    return cls().insMethod
 
 def parentFun():
     sf = subFunc()
