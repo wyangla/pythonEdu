@@ -13,11 +13,10 @@ class cls():
     
     clsProperty = -2
     
-    def __init__(self):
-        self.insProperty = -1
+    def __init__(self, insProperty):
+        self.insProperty = insProperty
         
     def insMethod(self):
-        self.insProperty = 1
         print(self.insProperty)
         
     @classmethod
@@ -27,7 +26,8 @@ class cls():
 
 def subFunc():
     cls.clsMethod()
-    return cls().insMethod
+    cls(3).insMethod()
+    return cls(1).insMethod
 
 def parentFunc(inputFunc):
     sf = inputFunc()
