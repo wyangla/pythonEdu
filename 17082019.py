@@ -13,8 +13,8 @@ class cls():
     
     clsProperty = -2
     
-    def __init__(self, insProperty):
-        self.insProperty = insProperty
+    def __init__(self, inputProperty):
+        self.insProperty = inputProperty
         
     def insMethod(self):
         print(self.insProperty)
