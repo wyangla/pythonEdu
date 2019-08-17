@@ -10,16 +10,20 @@ basic ideas of:
 # OO object oriented
 
 class cls():
+    
+    clsProperty = -2
+    
     def __init__(self):
-        self.clsProperty = -1
+        self.insProperty = -1
         
     def insMethod(self):
-        self.clsProperty = 1
-        print(self.clsProperty)
+        self.insProperty = 1
+        print(self.insProperty)
         
     @classmethod
     def clsMethod(cls):
-        print(2)
+        print(cls.clsProperty)
+
 
 def subFunc():
     cls.clsMethod()
