@@ -16,15 +16,20 @@ class cls():
     def insMethod(self):
         self.clsProperty = 1
         print(self.clsProperty)
+        
+    @classmethod
+    def clsMethod(cls):
+        print(2)
 
 def subFunc():
+    cls.clsMethod()
     return cls().insMethod
 
-def parentFun(inputFun):
-    sf = inputFun()
+def parentFunc(inputFunc):
+    sf = inputFunc()
     sf()
 
 
 
 if __name__ == "__main__":
-    parentFun(subFunc)
+    parentFunc(subFunc)
