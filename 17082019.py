@@ -23,14 +23,19 @@ class cls(object):
     def clsMethod(cls):
         print(cls.clsProperty)
 
+    def insMethod_2(self):
+        print(self.clsProperty)
+
 
 def subFunc():
     cls.clsMethod()
     ins = cls(-3)    # could be anything
     ins.__init__(3)
     ins.insMethod()
+    ins.clsProperty = 2    # modify the shared cls property
     
     ins_2 = cls(1)
+    ins.insMethod_2()
     return ins_2.insMethod
 
 def parentFunc(inputFunc):
