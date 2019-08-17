@@ -26,7 +26,8 @@ class cls(object):
 
 def subFunc():
     cls.clsMethod()
-    ins = cls(3)
+    ins = cls(-3)    # could be anything
+    ins.__init__(3)
     ins.insMethod()
     return cls(1).insMethod
 
