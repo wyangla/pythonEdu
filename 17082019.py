@@ -35,6 +35,7 @@ def subFunc():
     ins.__init__(3)
     ins.insMethod()
     ins.clsMethod_2(2)    # modify the shared cls property
+
     
     ins_2 = cls(1)
     ins_2.clsMethod()
