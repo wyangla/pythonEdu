@@ -8,6 +8,7 @@ basic ideas of:
 '''
 
 # OO object oriented
+# in python3 can only use class method access class property?
 
 class cls(object):
     
