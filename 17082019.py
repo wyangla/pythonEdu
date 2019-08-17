@@ -6,3 +6,11 @@ basic ideas of:
     4. property
     5. methods
 '''
+
+# OO object oriented
+
+def subFunc():
+    return 1
+
+def parentFun():
+    subVal = subFunc()
