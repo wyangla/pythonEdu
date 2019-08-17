@@ -9,8 +9,18 @@ basic ideas of:
 
 # OO object oriented
 
+class cls():
+    def clsMethod(self):
+        print(1)
+
 def subFunc():
-    return 1
+    return cls().clsMethod
 
 def parentFun():
-    subVal = subFunc()
+    sf = subFunc()
+    sf()
+
+
+
+if __name__ == "__main__":
+    parentFun()
