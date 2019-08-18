@@ -54,3 +54,6 @@ def parentFunc(inputFunc):
 
 if __name__ == "__main__":
     parentFunc(subFunc)
+
+print ("hello world")
+
